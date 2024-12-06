@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4gGaxr05P1ScITsxCTZrI58/UJPe+r+a4Bsz4I1u0wnwb9Ai9DAGfcV1nD52Jo7P" crossorigin="anonymous">
     
     <title>Web Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <div class="wrapper">
@@ -44,49 +44,34 @@
                 </div>
             </nav>
         </header>
-    
 
-        <!-- Bootstrap JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-QKRk6YkNUK/QFrcsng4ZyeXzoY71bSOnYbKUAvjkC5MExl6czG9KekP5e/NhB8bp" crossorigin="anonymous"></script>
+        <section>
+            <div>
+                <h1>CONTACT ME</h1>
+                <p>Get In Touch</p>
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+            
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+            
+                    <label for="location">Location</label>
+                    <select id="location" name="location">
+                      <option value="" disabled selected>City</option>
+                      <option value="ottawa">Ottawa</option>
+                      <option value="toronto">Toronto</option>
+                      <option value="montreal">Montreal</option>
+                    </select>
+            
+                    <button type="submit">Send Message</button>
+                  </form>
+            </div>
+        </section>
 
-        <main id="content">
-            <section>
-                <div class="intro">
-                    <h1>HOME</h1>
-                    <p>Welcome to My Creative Portfolio. I am a designer passionate about blending fashion, creativity, and storytelling. Dive into my portfolio to explore unique designs and innovative ideas.  Whether it is fashion collections, interactive media, or visual storytelling, my work is crafted to inspire and connect.</p>
-                    <a class="button" href="#">Explore My Work</a>
-                </div>
-            </section>
-
-            <section class="galerie">
-                <div class="portfolio">
-                    <img src="images\portfolio.png" alt="portfolio">
-                    <img src="images\b&w 1.webp" alt="b&w1">
-                    <img src="images\b&w 2.jpg" alt="b&w2">
-                    <img src="images\b&w 3.jpg" alt="b&w3">
-                    <p>Black and white inspiration</p>
-                </div>
-                <div class="casual">
-                    <img src="images\casual.png" alt="casual collection">
-                    <img src="images\casual.1.webp" alt="casual img 1">
-                    <img src="images/casual.2.jpg" alt="casual img 2">
-                    <img src="images/casual.3.jpg" alt="casual img 3">
-                    <p>Casual Collections</p>
-                </div>
-                <div class="streetwear">
-                    <img src="images/streetwear.png" alt="streetwear">
-                    <img src="images/streetwear.1.jpeg" alt="streetwear1">
-                    <img src="images/streetwear.2.jpg" alt="streetwear2">
-                    <img src="images/streetwear.3.jpg" alt="streetwear3">
-                    <img src="images/streetwear.4.jpg" alt="streetwear4">
-                    <p>Streetwear Designs</p>
-                </div>
-                <div class="models">
-                    <img src="images/models.png" alt="models">
-                    <p>Our Models</p>
-                </div>
-            </section>
-        </main>
         <footer>
             <script src="https://static.elfsight.com/platform/platform.js" async></script>
             <div class="elfsight-app-26f628b3-aa1d-4e42-acc3-4baa501a9683" data-elfsight-app-lazy></div>
