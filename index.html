@@ -1,98 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Portfolio</title>
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4gGaxr05P1ScITsxCTZrI58/UJPe+r+a4Bsz4I1u0wnwb9Ai9DAGfcV1nD52Jo7P" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
+        
+        <link rel="stylesheet" href="css/main.css">
     
-    <title>Web Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <div class="wrapper">
-        <!-- Header with Navbar -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" alt="Logo" class="logo" style="height: 40px;">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        
+    
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header with Navbar -->
+            <header role="banner">
+                <nav class="navbar navbar-expand-md animated-navbar" data-bs-theme="dark" role="navigation">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto" role="menubar">
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link" href="about.html" role="menuitem">ABOUT</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link" href="index.html" role="menuitem">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link" aria-disabled="true" role="menuitem">BLOG</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link" href="contact.html" role="menuitem">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        
+            <main class="py-5">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6"> 
+                        <div class="intro">
+                            <h1>HOME</h1>
+                            <p>Welcome to My Creative Portfolio. I am a designer passionate about blending fashion, creativity, and storytelling. Dive into my portfolio to explore unique designs and innovative ideas.  Whether it is fashion collections, interactive media, or visual storytelling, my work is crafted to inspire and connect.</p>
+                            <a class="btn btn-primary" href="#">Explore My Work</a> 
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div id="carouselExample1" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/portfolio.png" class="d-block w-100" alt="portfolio">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/portfolio1.png" class="d-block w-100" alt="b1">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <p class="text-center mt-3">Black and White Inspiration</p>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+
+                <div class="row mt-5 flex-wrap">
+                    <div class="col-md-6 col-lg-4">
+                        <div id="carouselExample2" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/casual0.png" class="d-block w-100" alt="casual">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/casual.1.png" class="d-block w-100" alt="c1">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-3">Casual Collections</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div id="carouselExample3" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/streetwear.png" class="d-block w-100" alt="street">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/streetwear.1.jpeg" class="d-block w-100" alt="s1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/stwr0.png" class="d-block w-100" alt="s2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-3">Streetwear Designs</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <img src="images/models.png" alt="models" class="img-fluid">
+                        <p class="text-center mt-3">Our Models</p>
+                    </div>
+                </div>
     
+                
+
+            <footer>
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-26f628b3-aa1d-4e42-acc3-4baa501a9683" data-elfsight-app-lazy></div>
+                <hr>
+                <p>&COPY;Kinsy 2024</p>
+            </footer>
+        </div>
 
         <!-- Bootstrap JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-QKRk6YkNUK/QFrcsng4ZyeXzoY71bSOnYbKUAvjkC5MExl6czG9KekP5e/NhB8bp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
 
-        <main id="content">
-            <section>
-                <div class="intro">
-                    <h1>HOME</h1>
-                    <p>Welcome to My Creative Portfolio. I am a designer passionate about blending fashion, creativity, and storytelling. Dive into my portfolio to explore unique designs and innovative ideas.  Whether it is fashion collections, interactive media, or visual storytelling, my work is crafted to inspire and connect.</p>
-                    <a class="button" href="#">Explore My Work</a>
-                </div>
-            </section>
-
-            <section class="galerie">
-                <div class="portfolio">
-                    <img src="images\portfolio.png" alt="portfolio">
-                    <img src="images\b&w 1.webp" alt="b&w1">
-                    <img src="images\b&w 2.jpg" alt="b&w2">
-                    <img src="images\b&w 3.jpg" alt="b&w3">
-                    <p>Black and white inspiration</p>
-                </div>
-                <div class="casual">
-                    <img src="images\casual.png" alt="casual collection">
-                    <img src="images\casual.1.webp" alt="casual img 1">
-                    <img src="images/casual.2.jpg" alt="casual img 2">
-                    <img src="images/casual.3.jpg" alt="casual img 3">
-                    <p>Casual Collections</p>
-                </div>
-                <div class="streetwear">
-                    <img src="images/streetwear.png" alt="streetwear">
-                    <img src="images/streetwear.1.jpeg" alt="streetwear1">
-                    <img src="images/streetwear.2.jpg" alt="streetwear2">
-                    <img src="images/streetwear.3.jpg" alt="streetwear3">
-                    <img src="images/streetwear.4.jpg" alt="streetwear4">
-                    <p>Streetwear Designs</p>
-                </div>
-                <div class="models">
-                    <img src="images/models.png" alt="models">
-                    <p>Our Models</p>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-26f628b3-aa1d-4e42-acc3-4baa501a9683" data-elfsight-app-lazy></div>
-            <hr>
-            &COPY;Kinsy 2024
-        </footer>
-    </div>
-</body>
+    </body>
 </html>

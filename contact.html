@@ -1,83 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Portfolio</title>
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4gGaxr05P1ScITsxCTZrI58/UJPe+r+a4Bsz4I1u0wnwb9Ai9DAGfcV1nD52Jo7P" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
+        
+        <link rel="stylesheet" href="css/main.css">
     
-    <title>Web Portfolio</title>
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-    <div class="wrapper">
-        <!-- Header with Navbar -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" alt="Logo" class="logo" style="height: 40px;">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        
+    
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header with Navbar -->
+            <header role="banner">
+                <nav class="navbar navbar-expand-md animated-navbar" data-bs-theme="dark" role="navigation">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto" role="menubar">
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link" href="about.html" role="menuitem">ABOUT</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link" href="index.html" role="menuitem">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link disabled" aria-disabled="true" role="menuitem">BLOG</a>
+                                </li>
+                                <li class="nav-item" role="none">
+                                    <a class="nav-link" href="contact.html" role="menuitem">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="py-5">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h1>CONTACT ME</h1>
+                        <p class="mb-4">Get In Touch</p>
+                        <form class="contact-form">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" placeholder="Type your message here"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="location" class="form-label">Location</label>
+                                <select id="location" name="location" class="form-select">
+                                    <option value="" disabled selected>City</option>
+                                    <option value="ottawa">Ottawa</option>
+                                    <option value="toronto">Toronto</option>
+                                    <option value="montreal">Montreal</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary send">Send Message</button>
+                        </form>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </section>
 
-        <section>
-            <div>
-                <h1>CONTACT ME</h1>
-                <p>Get In Touch</p>
-                <form class="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name">
-            
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email">
-            
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Type your message here"></textarea>
-            
-                    <label for="location">Location</label>
-                    <select id="location" name="location">
-                      <option value="" disabled selected>City</option>
-                      <option value="ottawa">Ottawa</option>
-                      <option value="toronto">Toronto</option>
-                      <option value="montreal">Montreal</option>
-                    </select>
-            
-                    <button type="submit">Send Message</button>
-                  </form>
-            </div>
-        </section>
+            <footer>
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-26f628b3-aa1d-4e42-acc3-4baa501a9683" data-elfsight-app-lazy></div>
+                <hr>
+                <p>&COPY;Kinsy 2024</p>
+            </footer>
+        </div>
 
-        <footer>
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-26f628b3-aa1d-4e42-acc3-4baa501a9683" data-elfsight-app-lazy></div>
-            <hr>
-            &COPY;Kinsy 2024
-        </footer>
-    </div>
-</body>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
 </html>
