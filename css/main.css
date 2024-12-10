@@ -23,10 +23,9 @@ h2{
     text-align: center;
 }
 
-.intro p{
+.intro p {
     font-weight: 500;
     width: 70%;
-    /* align-content: center; */
     margin: auto;
     margin-bottom: 40px;
 }
@@ -50,10 +49,6 @@ p{
     color: #8b5c48;
 }
 
-.intro {
-    border-right: #845C48;
-    border-bottom: #845C48;
-}
 
 .button {
     background-color: #8b5c48;
